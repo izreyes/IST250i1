@@ -1,0 +1,167 @@
+/*---IST 250 Niko Reyes
+Individual Assingment 1 : Selling on the web
+Ben Hellar*/
+
+
+/*Google fonts*/
+@import url(https://fonts.google.com/specimen/Roboto);
+@import url(https://fonts.google.com/specimen/Italiana);
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1 
+{
+  font-family: 'Italiana', sans-serif;
+}
+
+/*Banner Style for homepage with text overlay and relative position 
+so it does not eat up body textwidth set to take the width of screen. Auto for height to adjust accordingly.
+text-overlay to have my own text display over the banner. and to make sure it
+displays on the banner properly. Defining .class attribute here*/
+
+
+.header {
+    position: relative;
+    
+  }
+  
+  .header-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height:auto;
+    max-width: 100%;
+    min-width: 50%;
+  }
+/*trying auto sizing an image when scaling windows*/
+.autoimagesize
+{
+  max-width: 100%;
+  height: auto;
+}
+
+/*Adding Background Color*/
+/* Style template make sure to contrast and make easy on the eyes*/
+body 
+  {
+    background-color: #dcdcdc;
+   
+  
+  }
+
+  /*padding height and centering with black not standard but specifying paragraph elements to style 
+  independently and looks like it works.*/
+  p1,p2,p3
+  {
+    color: black;
+    text-align: justify;
+    line-height: 1.25;
+  }
+
+  p4
+  {
+    line-height: 1.25;
+    text-decoration: underline;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+
+/*Using mulitple selectors to set single style for h1, h2, ordered and unordered list*/
+  h1,h2
+  {
+      text-shadow: 4px 1px 4px rgb(20, 20, 20);
+      font-style: italic;
+      font-weight: bold;
+      background-color: #041E42;
+      color: #ffffff;
+      text-rendering: auto;
+      text-align: center;
+           
+  }
+
+
+
+/* Wanted the list to have these effect*/
+ol,ul
+  {
+      font-style: italic;
+      font-weight: bold;
+      font-family:'Times New Roman', Times, serif
+  }
+    /* Setting images to 10% and causing a line break before and after image to take the width of the page centering it.*/
+    img {
+      
+      display:block;
+      margin:auto;
+      width: 10%;  
+    }
+/*Isolating the class to center on the bottom of the page*/
+.center-contentBottom 
+    {
+      text-align: center;
+      
+    }
+
+
+/*border around header and footer*/
+h1, .darkblue-border 
+   {
+     border: 2px solid #041E42;
+     padding: 5px;
+     text-align: center;
+   }
+
+/*Specified  IDs*/
+#orderedList
+{
+  font-size: 16x;
+  list-style-type:decimal-leading-zero
+}
+
+#unOrderedList
+{
+font-size: 16x;
+list-style:disc
+}
+
+#homeButton
+{
+  background-color: #041E42;
+  
+}
+
+#bottomOfHomePage
+{
+  background-color: #deb887;
+}
+
+/*Moving Header up by 30 and trying to auto size Welcome Message*/
+#welcomeHeader
+{
+  text-align:center;
+  font-size: 15;
+  margin-top: -30px; 
+}
+
+#hover-effect:hover 
+{
+  opacity: 0.7;
+}
+
+
+
+
+
